@@ -1,12 +1,15 @@
 import "./App.css";
-
-import Homepage from "./components/Homepage";
+import Intro from "./components/Intro.js";
+import Button from "./components/Button.js";
+import SizeButton from "./components/SizeButton.js";
 
 function App() {
   return (
     <div className="App">
       <div>
-        <Homepage />
+        <Intro />
+        <Button>Köp</Button>
+        <SizeButton>S</SizeButton>
       </div>
     </div>
   );

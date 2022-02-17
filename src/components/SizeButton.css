@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .size-button {
+    cursor: pointer;
+    font-size: 10px;
+    border-radius: 1px;
+    padding: 1px 1px;
+    color: black;
+    background-color: #fff;
+    font-weight: normal;
+    border-width: 1px;
+  }
+  
+  
+  @media (max-width: 375px) {
+    .size-button {
+      cursor: pointer;
+      font-size: 7px;
+      border-radius: 1px;
+      padding: 1px 1px;
+      color: black;
+      background-color: #fff;
+      font-weight: lighter;
+      border-width: 1px;
+    }
+  }
+  

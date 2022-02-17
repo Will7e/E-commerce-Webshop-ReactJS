@@ -3,6 +3,8 @@ import Intro from "./components/Intro.js";
 import Button from "./components/Button.js";
 import SizeButton from "./components/SizeButton.js";
 import Header from "./components/Header.js";
+import Shipping from "./components/Shipping.js";
+
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
         <Intro />
         <Button>Köp</Button>
         <SizeButton>S</SizeButton>
+        <Shipping></Shipping>
       </div>
     </div>
   );

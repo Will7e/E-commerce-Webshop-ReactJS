@@ -1,0 +1,10 @@
+
+.shipping{
+    display: flex;
+    justify-content: space-evenly;
+    font-family:Roboto;
+}
+.text__1{
+    font-size: 10px;
+    flex-wrap: wrap;
+}

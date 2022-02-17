@@ -6,9 +6,10 @@ import {
   faBasketShopping,
   faUser,
   faMagnifyingGlass,
-  faBars,
 } from "@fortawesome/free-solid-svg-icons";
 import { faMessage } from "@fortawesome/free-regular-svg-icons";
+
+import DropdownMenu from "./DropdownMenu";
 
 function Header() {
   return (
@@ -19,11 +20,16 @@ function Header() {
         <h1>BETONGGRIS</h1>
       </div>
 
+      <div className="category__bar">
+        <DropdownMenu />
+      </div>
+
       <div className="header__search">
-        <button className="category__bar">
-          <FontAwesomeIcon className="bar-icon" icon={faBars} size="xl" />
-        </button>
-        <input className="header__searchInput" type="text" />
+        <input
+          className="header__searchInput"
+          type="text"
+          placeholder="Search items..."
+        />
         <FontAwesomeIcon
           className="header__searchIcon"
           icon={faMagnifyingGlass}

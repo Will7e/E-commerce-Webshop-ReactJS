@@ -13,8 +13,8 @@ function App() {
       <Header></Header>
         <Intro />
         <Button>Köp</Button>
-        <SizeButton>S</SizeButton>
         <Shipping></Shipping>
+        <SizeButton>S</SizeButton>
       </div>
     </div>
   );

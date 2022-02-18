@@ -1,0 +1,7 @@
+.shipping{
+    display: flex;
+    justify-content: space-evenly;
+    font-family:Roboto;
+    font-size: 16px;
+
+}

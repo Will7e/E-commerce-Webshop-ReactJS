@@ -8,15 +8,21 @@ import "./Intro.css";
 
 function Intro() {
   return (
-    <div className="intro">
-      <img id="picture1" src={image1}></img>
-      <div className="intro2">
-        <img id="picture2" src={image2}></img>
-        <img id="picture4" src={image4}></img>
+    <div className="image__container">
+      <div className="box-1">
+        <img className="images" src={image1}></img>
       </div>
-      <div className="intro3">
-        <img id="picture3" src={image3}></img>
-        <img id="picture5" src={image5}></img>
+      <div className="box-2">
+        <img className="images" src={image2}></img>
+      </div>
+      <div className="box-3">
+        <img className="images" src={image3}></img>
+      </div>
+      <div className="box-4">
+        <img className="images" src={image4}></img>
+      </div>
+      <div className="box-5">
+        <img className="images" src={image5}></img>
       </div>
     </div>
   );

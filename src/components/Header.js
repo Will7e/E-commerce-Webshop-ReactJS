@@ -28,7 +28,7 @@ function Header() {
         <input
           className="header__searchInput"
           type="text"
-          placeholder="Search items..."
+          placeholder="Search product ..."
         />
         <FontAwesomeIcon
           className="header__searchIcon"

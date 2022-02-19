@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Item from "./Item.js";
+import "./Products.css"
 
 const products = [
   {
@@ -77,22 +78,26 @@ const products = [
   },
 ];
 
-function Products() {
+const Products = (/*{ props }*/) => {
+ /* const { categoryNr } = props;*/
   const [items, setItems] = useState(products);
   return (
     <div className="prods">
       {items.map((item, i) => {
-        return (
-          <Item
-            key={i}
-            image={item.image}
-            prodName={item.productName}
-            price={item.price}
-          />
-        );
+        if (item.categoryId === 1/*{ categoryNr }*/) {
+          return (
+            <Item
+              key={i}
+              image={item.image}
+              prodName={item.productName}
+              price={item.price}
+            />
+          );
+        }
       })}
+      
     </div>
   );
-}
+};
 
 export default Products;

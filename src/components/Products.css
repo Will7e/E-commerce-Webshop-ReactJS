@@ -1,0 +1,13 @@
+*/ {
+  box-sizing: border-box;
+}
+
+.prods {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 5px;
+  border-color: gray;
+  flex-wrap: wrap;
+}

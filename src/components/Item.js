@@ -1,5 +1,6 @@
 import react from "react";
 import Button from "./Button.js";
+import "./Item.css";
 
 const Item = ({ image, prodName, price }) => {
   return (

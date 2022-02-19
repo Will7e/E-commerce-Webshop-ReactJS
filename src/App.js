@@ -4,7 +4,7 @@ import { useState } from "react";
 import Products from "./components/Products";
 
 function App() {
-  return <Products />;
+  return <Products></Products>;
 }
 
 export default App;

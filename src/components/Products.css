@@ -20,3 +20,15 @@
   padding-left: 105px;
   padding-top: 30px;
 }
+
+@media (max-width: 375px) {
+  .category-nr {
+    padding-left: 30px;
+    padding-top: 20px;
+    font-size: medium;
+  }
+
+  .prods {
+    padding-bottom: 20px;
+  }
+}

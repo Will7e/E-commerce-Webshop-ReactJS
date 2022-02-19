@@ -15,6 +15,7 @@
 #picture1 {
   max-width: 100%;
   min-width: 375px;
+  padding-left: 150px;
 }
 
 .intro2 {

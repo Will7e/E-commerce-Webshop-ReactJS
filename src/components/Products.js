@@ -82,6 +82,8 @@ const Products = (/*{ props }*/) => {
  /* const { categoryNr } = props;*/
   const [items, setItems] = useState(products);
   return (
+    <>
+    <h3 className="category-nr">Category 1</h3>
     <div className="prods">
       {items.map((item, i) => {
         if (item.categoryId === 1/*{ categoryNr }*/) {
@@ -97,6 +99,7 @@ const Products = (/*{ props }*/) => {
       })}
       
     </div>
+    </>
   );
 };
 

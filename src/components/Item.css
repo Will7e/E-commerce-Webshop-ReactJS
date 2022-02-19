@@ -19,9 +19,13 @@
   border-color: lightgrey;
 }
 
+.prod-price {
+  font-weight: 500;
+}
+
 @media (max-width: 375px) {
   .item {
-      padding-top: 5px;
+    padding-top: 5px;
   }
   .prod-image {
     max-width: 150px;

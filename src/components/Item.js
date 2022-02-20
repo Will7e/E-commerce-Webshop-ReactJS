@@ -7,7 +7,7 @@ const Item = ({ image, prodName, price }) => {
     <div className="item">
       <img className="prod-image" src={image}></img>
       <p className="prod-name">{prodName}</p>
-      <p className="prod-price">{price} kr</p>
+      <p className="prod-price">{price}:-</p>
       <Button>Köp</Button>
     </div>
   );

@@ -1,51 +1,86 @@
-*::before,
-*::after {
-  box-sizing: inherit;
+* {
+  box-sizing: border-box;
 }
-.image__container {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 20rem 20rem 20rem 20rem;
-  gap: 20px;
-  height: 100%;
 
+.intro {
+  display: flex;
+  background: #fff;
+  margin-top: 30px;
+  margin-left: 80px;
+  margin-right: 25px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+#picture1 {
+  max-width: 100%;
+  min-width: 375px;
+  padding-left: 150px;
+}
+
+.intro2 {
+  max-width: 260px;
   align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  padding-left: 20px;
 }
-.box-1 {
-  grid-row-start: 1;
-  grid-column-start: 1;
-  grid-row-end: 3;
-  grid-column-end: 3;
-}
-.box-2 {
-  grid-row-start: 1;
-  grid-column-start: 4;
 
-  grid-row-end: 2;
-  grid-column-end: 5;
+#picture4 {
+  margin-top: 27px;
 }
-.box-3 {
-  grid-row-start: 1;
-  grid-column-start: 3;
+.intro3 {
+  max-width: 260px;
+  align-items: center;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  padding-left: 100px;
+}
 
-  grid-row-end: 2;
-  grid-column-end: 4;
+#picture5 {
+  margin-top: 27px;
 }
-.box-4 {
-  grid-row-start: 2;
-  grid-column-start: 4;
 
-  grid-row-end: 3;
-  grid-column-end: 5;
-}
-.box-5 {
-  grid-area: photo;
-  grid-row-start: 2;
-  grid-column-start: 3;
+@media (max-width: 375px) {
+  .intro {
+    max-width: 375px;
+    margin-top: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+  }
 
-  grid-row-end: 3;
-  grid-column-end: 4;
-}
-.images {
-  width: 100%;
+  .intro2 {
+    max-width: 187px;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    margin-top: 5px;
+  }
+  #picture2 {
+    max-width: 185px;
+  }
+  #picture4 {
+    max-width: 185px;
+    margin-top: 2px;
+  }
+  #picture3 {
+    max-width: 185px;
+  }
+  #picture5 {
+    max-width: 185px;
+    margin-top: 2px;
+  }
+
+  .intro3 {
+    max-width: 187px;
+    align-items: center;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    padding-left: 3px;
+    margin-top: 5px;
+  }
 }

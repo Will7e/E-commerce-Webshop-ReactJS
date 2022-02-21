@@ -1,18 +1,15 @@
 import "./App.css";
-import Intro from "./components/Intro.js";
-import { useState } from "react";
-import Products from "./components/Products";
+import Header from "./components/Header.js";
 import { propTypes } from "react-bootstrap/esm/Image";
+import Homepage from "./components/Homepage.js";
 
 function App() {
-  
   return (
     <div>
-    <Products catId={1}></Products>
-    <Products catId={2}></Products>
-    <Products catId={3}></Products>
-    </ div>
+      <Header></Header>
+      <Homepage></Homepage>
+    </div>
   );
-};
+}
 
 export default App;

@@ -54,8 +54,8 @@
   opacity: 100% !important;
 }
 .img-png {
-  width: 17%;
-  height: 15%;
+  width: 380px;
+  height: auto;
   object-fit: contain;
 }
 .email {

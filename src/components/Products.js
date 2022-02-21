@@ -78,15 +78,14 @@ const products = [
   },
 ];
 
-const Products = (/*{ props }*/) => {
-  /* const { categoryNr } = props;*/
+const Products = (props) => {
   const [items, setItems] = useState(products);
   return (
     <>
-      <h3 className="category-nr">Category 1</h3>
+      <h3 className="category-nr">Category {props.catId}</h3>
       <div className="prods">
         {items.map((item, i) => {
-          if (item.categoryId === 1 /*{ categoryNr }*/) {
+          if (item.categoryId === props.catId) {
             return (
               <Item
                 key={i}

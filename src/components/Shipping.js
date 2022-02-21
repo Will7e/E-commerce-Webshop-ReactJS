@@ -11,9 +11,13 @@ function Shipping(){
     return(
         <div className="shipping">
             <div><img className="truck__logo" src={rectangle} /><span>  Snabb leverans</span></div>
+
             <div><img className="box__logo" src={rectangle1}/><span>  Fri frakt över 500 kr</span></div>
+
             <div><img className="pin__logo" src={rectangle2}/><span>  Klubben för bästa vänner</span></div>
+
             <div><img className="chat__logo" src={rectangle3}/><span>  Professionell service</span></div>
+            
         </div>
     );
 }

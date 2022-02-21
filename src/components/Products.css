@@ -1,0 +1,34 @@
+*/ {
+  box-sizing: border-box;
+}
+
+.prods {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 0px;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: lightgrey;
+  flex-wrap: wrap;
+  padding-top: 2px;
+  padding-bottom: 30px;
+}
+
+.category-nr {
+  padding-left: 105px;
+  padding-top: 30px;
+}
+
+@media (max-width: 375px) {
+  .category-nr {
+    padding-left: 30px;
+    padding-top: 20px;
+    font-size: medium;
+  }
+
+  .prods {
+    padding-bottom: 20px;
+  }
+}

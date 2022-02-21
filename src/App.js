@@ -1,16 +1,18 @@
 import "./App.css";
-import Homepage from "./components/Homepage";
-import Header from "./components/Header";
+import Intro from "./components/Intro.js";
+import { useState } from "react";
+import Products from "./components/Products";
+import { propTypes } from "react-bootstrap/esm/Image";
 
 function App() {
+  
   return (
-    <div className="App">
-      <div>
-        <Header />
-        <Homepage />
-      </div>
-    </div>
+    <div>
+    <Products catId={1}></Products>
+    <Products catId={2}></Products>
+    <Products catId={3}></Products>
+    </ div>
   );
-}
+};
 
 export default App;

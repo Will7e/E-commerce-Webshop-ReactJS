@@ -1,0 +1,40 @@
+*/ {
+  box-sizing: border-box;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-right: 8px;
+}
+
+.prod-image {
+  max-width: 280px;
+  padding: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: lightgrey;
+}
+
+.prod-price {
+  font-weight: 500;
+}
+
+@media (max-width: 375px) {
+  .item {
+    padding-top: 5px;
+  }
+  .prod-image {
+    max-width: 150px;
+  }
+
+  .prod-name {
+    font-size: 8px;
+  }
+  .prod-price {
+    font-size: 8px;
+  }
+}

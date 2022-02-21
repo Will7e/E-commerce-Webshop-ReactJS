@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import Button from "./Button.js";
 import "./Item.css";
 

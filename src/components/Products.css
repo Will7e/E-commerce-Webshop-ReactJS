@@ -17,8 +17,9 @@
 }
 
 .category-nr {
-  padding-left: 105px;
+  padding-left: 250px;
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 @media (max-width: 375px) {

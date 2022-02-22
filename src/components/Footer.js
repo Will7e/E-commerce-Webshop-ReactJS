@@ -1,8 +1,8 @@
 import React from "react";
 import "./Footer.css";
-import Klarna from "../images/Klarna.svg";
-import Trygg from "../images/Trygg.svg";
-import Media from "../images/media.png";
+import Klarna from "../logopack/Klarna.svg";
+import Trygg from "../logopack/Trygg.svg";
+import Media from "../logopack/media.png";
 function Footer() {
   return (
     <div className="wrapper">

@@ -1,17 +1,13 @@
 import "./App.css";
-import Products from "./components/Products";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Intro from "./components/Intro";
+import Homepage from "./components/Homepage";
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Header />
-      <Intro />
-      <Products catId={1}></Products>
-      <Products catId={2}></Products>
-      <Products catId={3}></Products>
+      <Homepage />
       <Footer />
     </div>
   );

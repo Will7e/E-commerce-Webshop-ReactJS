@@ -108,7 +108,7 @@
 
 .category__intro {
   cursor: pointer;
-  font-size: 20px;
+  font-size: 25px;
   text-align: center;
 }
 .last_divider {
@@ -116,4 +116,22 @@
 }
 .header__optionLine {
   font-size: 20px;
+}
+.links {
+  text-decoration: none;
+  color: white;
+  color: inherit;
+}
+.links :focus,
+:hover,
+:visited,
+:link,
+:active {
+  text-decoration: none;
+}
+.link__header:hover {
+  color: white !important;
+}
+.drop__link {
+  color: inherit;
 }

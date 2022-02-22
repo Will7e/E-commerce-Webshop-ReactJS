@@ -38,7 +38,7 @@
   border-bottom: 2px solid #d8d8d8;
 }
 .img {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   cursor: pointer;
 }
 .copy-right {
@@ -59,4 +59,10 @@
 }
 .email {
   color: #ff6a00bb;
+}
+.klarna {
+  width: 20%;
+}
+.trygg {
+  width: 7%;
 }

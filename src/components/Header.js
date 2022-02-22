@@ -10,14 +10,20 @@ import {
 import { faMessage } from "@fortawesome/free-regular-svg-icons";
 
 import DropdownMenu from "./DropdownMenu";
+import { Link } from "react-router-dom";
+import Homepage from "./Homepage";
 
 function Header() {
   return (
     <div className="header">
-      <img className="header__logo" src={logo} />
+      <Link className="links link__header" to="/">
+        <img className="header__logo" src={logo} />
+      </Link>
 
       <div className="logo__name">
-        <h1>BETONGGRIS</h1>
+        <Link className="links link__header" to="/">
+          <h1>BETONGGRIS</h1>
+        </Link>
       </div>
 
       <div className="category__bar">

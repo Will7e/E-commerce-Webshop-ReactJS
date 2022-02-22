@@ -1,5 +1,5 @@
 .header {
-  height: 76px;
+  height: 100px;
   display: flex;
   align-items: center;
   background-color: #2c2c2c;
@@ -8,7 +8,7 @@
   width: 100%;
 }
 .header__logo {
-  width: 68px;
+  width: 90px;
   object-fit: contain;
   margin: 0 10px 0 40px;
 }
@@ -16,7 +16,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 10px;
+  font-size: 16px;
   line-height: 14px;
   margin: 5px;
   padding-top: 12px;
@@ -33,7 +33,7 @@
   border-radius: 24px;
 }
 .header__searchInput {
-  height: 32px;
+  height: 50px;
   width: 100%;
   border: none;
   padding: 10px;
@@ -43,8 +43,8 @@
   border: none !important;
 }
 .header__searchIcon {
-  padding: 5px;
-  height: 22px;
+  padding: 10px;
+  height: 27px;
   background-color: #2c2c2c;
   outline: 1px solid white;
   outline-offset: -1px;
@@ -60,7 +60,7 @@
   color: white;
   justify-content: center;
   border-radius: 5px;
-  padding: 5px;
+  padding: 15px;
   background-color: black !important;
   cursor: pointer;
 }
@@ -108,9 +108,12 @@
 
 .category__intro {
   cursor: pointer;
-  font-size: 15px;
+  font-size: 20px;
   text-align: center;
 }
 .last_divider {
   border: none;
+}
+.header__optionLine {
+  font-size: 20px;
 }

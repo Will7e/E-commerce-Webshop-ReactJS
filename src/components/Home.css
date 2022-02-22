@@ -1,6 +1,9 @@
-.home__container {
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
+* ::backdrop,
+*::after {
+  box-sizing: border-box;
+}
+
+.home {
   width: 100%;
+  height: 100%;
 }

@@ -1,18 +1,16 @@
 import "./App.css";
-import Header from "./components/Header.js";
-import { propTypes } from "react-bootstrap/esm/Image";
-import Homepage from "./components/Homepage.js";
-import SCMain from "./components/SCMain"
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Homepage from "./components/Homepage";
 
 function App() {
   return (
-    <>
-      <SCMain />
-    </>
+    <div className="App">
+      <Header />
+      <Homepage />
+      <Footer />
+    </div>
   );
 }
 
 export default App;
-
-/*<Header></Header>
-<Homepage></Homepage>*/

@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "./Button.js";
 import "./Item.css";
+import SCMain from "./SCMain.js";
 
 const Item = ({ image, prodName, price }) => {
   return (
@@ -8,7 +9,7 @@ const Item = ({ image, prodName, price }) => {
       <img className="prod-image" src={image}></img>
       <p className="prod-name">{prodName}</p>
       <p className="prod-price">{price}:-</p>
-      <Button>Köp</Button>
+      <Button onClick={SCMain.addToCart}>Köp</Button>
     </div>
   );
 };

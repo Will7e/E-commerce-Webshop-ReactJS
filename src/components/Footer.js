@@ -1,14 +1,17 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 import "./Footer.css";
 import Klarna from "../logopack/Klarna.svg";
 import Trygg from "../logopack/Trygg.svg";
 import Media from "../logopack/media.png";
+
+
 function Footer() {
   return (
     <div className="wrapper">
       <div className="footer__container">
         <div className="info__box">
-          <p className="info__head">Om oss</p>{" "}
+          <p className="info__head"><Link to="/about">Om oss</Link></p>
           <ul>
             <li>Om Betonggris</li>
             <li>Jobba hos oss</li>

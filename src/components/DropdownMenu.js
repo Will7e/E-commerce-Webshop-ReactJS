@@ -12,28 +12,30 @@ function DropdownMenu() {
       <Dropdown.Toggle id="dropdown-button-dark" variant="outline-light">
         <FontAwesomeIcon className="bar-icon" icon={faBars} size="2xl" />
       </Dropdown.Toggle>
+
       <Dropdown.Menu className="drop__downMenu" variant="black">
         <h1 className="category__intro">Kategorier</h1>
         <Dropdown.Divider />
-
-        <Dropdown.Item className="drop__downItem" href="#">
-          <Link className="drop__link" to="/halsband">
+        <Link className="drop__link" to="/halsband">
+          <Dropdown.Item className="drop__downItem" href="#/action-1">
             Handsband
-          </Link>
-        </Dropdown.Item>
-
+          </Dropdown.Item>
+        </Link>
         <Dropdown.Divider />
-        <Dropdown.Item className="drop__downItem" href="#/action-2">
-          <Link className="drop__link" to="/namnbrickor">
+
+        <Link className="drop__link" to="/namnbrickor">
+          <Dropdown.Item className="drop__downItem" href="#/action-2">
             Namnbrickor
-          </Link>
-        </Dropdown.Item>
+          </Dropdown.Item>
+        </Link>
+
         <Dropdown.Divider className="last_divider" />
-        <Dropdown.Item className="drop__downItem" href="#/action-3">
-          <Link className="drop__link" to="/koppel">
+
+        <Link className="drop__link" to="/koppel">
+          <Dropdown.Item className="drop__downItem" href="#/action-3">
             Koppel
-          </Link>
-        </Dropdown.Item>
+          </Dropdown.Item>
+        </Link>
       </Dropdown.Menu>
     </Dropdown>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
+import About from "./About";
 import "./Footer.css";
 import Klarna from "../logopack/Klarna.svg";
 import Trygg from "../logopack/Trygg.svg";

@@ -3,20 +3,20 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Homepage from "./components/Homepage";
 import About from "./components/About";
-import { BrowserRouter, Routes, Route} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <div className="App">
         <Header />
           <Routes>
-            <Route exact path="/" component={Homepage} />
-            <Route exact path="/about" component={About} />
+            <Route exact path="/" element={<Homepage />} />
+            <Route exact path="/about" element={<About />} />
           </Routes>
         <Footer />
       </div>
-    </BrowserRouter>
+    </Router>
   );
 }
 

@@ -52,20 +52,20 @@ function Header() {
             </span>
           </span>
         </div>
-
-        <div className="header__option items__basket">
-          <span className="header__optionLine basket__line">
-            Varukorg{" "}
-            <span>
-              <FontAwesomeIcon
-                className="basket__icon"
-                icon={faBasketShopping}
-              />
-              <span className="number_basketItem">{basket?.length}</span>
+        <Link className="links link__header" to="/varukorg">
+          <div className="header__option items__basket">
+            <span className="header__optionLine basket__line">
+              Varukorg{" "}
+              <span>
+                <FontAwesomeIcon
+                  className="basket__icon"
+                  icon={faBasketShopping}
+                />
+                <span className="number_basketItem">{basket?.length}</span>
+              </span>
             </span>
-          </span>
-        </div>
-
+          </div>
+        </Link>
         <div className="header__option option__hoverGray">
           <span className="header__optionLine ">
             Logga in{" "}

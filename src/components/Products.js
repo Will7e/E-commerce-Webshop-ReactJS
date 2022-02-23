@@ -5,6 +5,7 @@ import "./Products.css";
 import { data } from "./data.js";
 
 const Products = (props) => {
+  const {addToCart} = props;
   const [items, setItems] = useState(data);
   return (
     <>
@@ -18,6 +19,7 @@ const Products = (props) => {
                 image={item.image}
                 prodName={item.productName}
                 price={item.price}
+                addToCart={addToCart}
               />
             );
           }

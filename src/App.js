@@ -2,6 +2,7 @@ import "./App.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Homepage from "./components/Homepage";
+import SCMain from "./components/SCMain";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <Homepage />
       <Footer />
+      <SCMain />
     </div>
   );
 }

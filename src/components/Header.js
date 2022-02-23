@@ -8,12 +8,13 @@ import {
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
 import { faMessage } from "@fortawesome/free-regular-svg-icons";
-
 import DropdownMenu from "./DropdownMenu";
 import { Link } from "react-router-dom";
-import Homepage from "./Homepage";
+import { useStateValue } from "./StateProvider";
 
 function Header() {
+  const [{ basket }] = useStateValue();
+
   return (
     <div className="header">
       <Link className="links link__header" to="/">
@@ -60,7 +61,7 @@ function Header() {
                 className="basket__icon"
                 icon={faBasketShopping}
               />
-              <span className="number_basketItem">0</span>
+              <span className="number_basketItem">{basket?.length}</span>
             </span>
           </span>
         </div>

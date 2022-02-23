@@ -5,27 +5,22 @@ import "./Products.css";
 import { data } from "./data.js";
 
 const Products = (props) => {
-  const {addToCart} = props;
-  const [items, setItems] = useState(data);
+  const [items] = useState(data);
   return (
-    <>
-      <h3 className="category-nr">Category {props.catId}</h3>
-      <div className="prods">
-        {items.map((item, i) => {
-          if (item.categoryId === props.catId) {
-            return (
-              <Item
-                key={i}
-                image={item.image}
-                prodName={item.productName}
-                price={item.price}
-                addToCart={addToCart}
-              />
-            );
-          }
-        })}
-      </div>
-    </>
+    <div className="prods">
+      {items.map((item, i) => {
+        if (item.categoryId === props.catId) {
+          return (
+            <Item
+              key={i}
+              image={item.image}
+              prodName={item.productName}
+              price={item.price}
+            />
+          );
+        }
+      })}
+    </div>
   );
 };
 

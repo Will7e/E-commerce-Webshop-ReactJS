@@ -8,7 +8,8 @@
 .footer__container {
   display: flex;
   justify-content: space-evenly;
-  margin: 5rem;
+  flex-wrap: wrap;
+  margin: 4rem 5rem 4rem 5rem;
   padding-top: 5rem;
   padding-bottom: 4rem;
   border-top: 3px solid #ff6900;
@@ -33,12 +34,13 @@
 }
 .payment__box {
   display: flex;
+  flex-wrap: wrap;
   object-fit: contain;
   justify-content: space-evenly;
   border-bottom: 2px solid #d8d8d8;
 }
 .img {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   cursor: pointer;
 }
 .copy-right {
@@ -59,4 +61,10 @@
 }
 .email {
   color: #ff6a00bb;
+}
+.klarna {
+  width: 20%;
+}
+.trygg {
+  width: 7%;
 }

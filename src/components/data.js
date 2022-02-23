@@ -90,42 +90,40 @@ export const data = () => {
 export const designImage = () => {
   return [
     {
-      image: "/images/Bild1.png",
-      categoryId: 1,
-    },
-    {
-      image: "/images/Bild2.png",
-      categoryId: 1,
-    },
-    {
-      image: "/images/Bild3.png",
-      categoryId: 1,
-    },
-    {
-      image: "/images/Bild4.png",
+      image: "/images/design-img-cat1.png",
       categoryId: 2,
     },
     {
-      image: "/images/Bild5.png",
+      image: "/images/design-img-cat1-a.png",
       categoryId: 2,
     },
     {
-      image: "/images/Bild6.png",
+      image: "/images/design-img-cat1-b.png",
       categoryId: 2,
     },
     {
-      image: "/images/Bild7.png",
+      image: "/images/design-img-cat2.png",
       categoryId: 3,
     },
     {
-      image: "/images/Bild8.png",
+      image: "/images/design-img-cat2-a.png",
       categoryId: 3,
     },
     {
-      image: "/images/Bild9.png",
-      productName: "Trick & Treat Lamm- & Rissnittar 1 kg",
-      price: "49.90",
+      image: "/images/design-img-cat2-b.png",
       categoryId: 3,
+    },
+    {
+      image: "/images/design-img-cat3.png",
+      categoryId: 1,
+    },
+    {
+      image: "/images/design-img-cat3-a.png",
+      categoryId: 1,
+    },
+    {
+      image: "/images/design-img-cat3-b.png",
+      categoryId: 1,
     },
   ];
 };

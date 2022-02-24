@@ -56,8 +56,7 @@ function Footer() {
       </div>
       <div className="copy-right">
         <p className="cr-text">
-          Betonggris.se - Djuraffär online och i din närmaste stad! - Copyright
-          © 2022 React Group
+          Betonggris.se - Djuraffär online! - Copyright © 2022 React Group
         </p>
       </div>
     </div>

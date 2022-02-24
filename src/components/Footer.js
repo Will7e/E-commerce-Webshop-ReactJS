@@ -20,7 +20,7 @@ function Footer() {
           </ul>
         </div>
         <div className="info__box">
-          <p className="info__head cus-service">Kundservice</p>
+          <p className="info__head cus-service"><Link to="/customer">Kundservice</Link></p>
           <ul>
             <li>Kontakta oss</li>
             <li>Frågor och svar</li>
@@ -28,7 +28,7 @@ function Footer() {
           </ul>
         </div>
         <div className="info__box">
-          <p className="info__head">Så handlar du</p>
+          <p className="info__head"><Link to="/howto">Så handlar du</Link></p>
           <ul>
             <li>Betalning</li>
             <li>Leverans</li>
@@ -37,7 +37,7 @@ function Footer() {
           </ul>
         </div>
         <div className="info__box">
-          <p className="info__head">Kundklubben</p>
+          <p className="info__head"><Link to="/club">Kundklubben</Link></p>
           <ul>
             <li>Om vår Kundklubb</li>
             <li>Logga in/Bli medlem</li>

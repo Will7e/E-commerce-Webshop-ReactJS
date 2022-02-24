@@ -121,7 +121,7 @@
   }
 
   .img-png {
-    max-width: 187px;
+    max-width: 170px;
   }
 
   .payment__box {
@@ -131,6 +131,13 @@
     object-fit: contain;
     justify-content: space-evenly;
     border-bottom: 0;
+  }
+
+  .klarna {
+    width: 30%;
+  }
+  .trygg {
+    width: 10%;
   }
 
   .copy-right {

@@ -13,7 +13,8 @@
 
 @media (max-width: 375px) {
   .item {
-    max-width: 150px;
+    max-width: 187px;
+    padding-bottom: 1rem;
   }
 
   .prod-image {

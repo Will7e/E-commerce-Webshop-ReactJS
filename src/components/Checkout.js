@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useEffect, useReducer } from "react";
 import "./checkout.css";
 import "./Button.css";
 import Basketlogo from "../logopack/basket-logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
-
+import reducer, { initialState } from "./reducer";
 import CheckoutProduct from "./CheckoutProduct";
 import CurrencyFormat from "react-currency-format";
 import { useStateValue } from "./StateProvider";
 
 const Checkout = () => {
-  const [{ basket }] = useStateValue();
+  const [{ basket }, dispatch] = useStateValue();
+
+  useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify([...basket]));
+  }, [basket]);
 
   const subtotal = basket.reduce((total, item) => item.price + total, 0);
 
@@ -32,7 +36,7 @@ const Checkout = () => {
           </div>
 
           <div className="basket__product">
-            {basket.map((item) => (
+            {basket?.map((item) => (
               <CheckoutProduct
                 image={item.image}
                 prodName={item.prodName}

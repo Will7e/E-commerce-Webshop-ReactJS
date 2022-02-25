@@ -5,7 +5,7 @@
 
 .image {
   object-fit: contain;
-  width: 150px;
+  width: 120px;
   margin: 4rem;
 }
 .page__title {
@@ -20,7 +20,7 @@
   margin: 10rem 10rem 0 10rem;
 }
 .title {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 .page__image {
   display: flex;

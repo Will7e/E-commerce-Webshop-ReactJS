@@ -1,6 +1,6 @@
 .prod-image {
   object-fit: contain;
-  width: 270px;
+  width: 250px;
   padding: 5px;
   border: 1px solid lightgray;
 }
@@ -8,7 +8,7 @@
   font-weight: 500;
 }
 .prod {
-  font-size: 20px;
+  font-size: 17px;
 }
 
 @media (max-width: 375px) {

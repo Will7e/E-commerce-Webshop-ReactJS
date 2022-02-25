@@ -1,5 +1,8 @@
 export const initialState = {
-  basket: [],
+  basket:
+    localStorage.getItem("todos") == null
+      ? []
+      : JSON.parse(localStorage.getItem("todos")),
 };
 
 const reducer = (state, action) => {
@@ -10,6 +13,25 @@ const reducer = (state, action) => {
         ...state,
         basket: [...state.basket, action.item],
       };
+
+    case "REMOVE_FROM_BASKET":
+      const index = state.basket.findIndex(
+        (basketItem) => basketItem.image === action.image
+      );
+      let newBasket = [...state.basket];
+
+      if (index >= 0) {
+        newBasket.splice(index, 1);
+      } else {
+        console.warn(
+          `Product with id ${action.id} does not exist in the basket`
+        );
+      }
+      return {
+        ...state,
+        basket: newBasket,
+      };
+
     default:
       return state;
   }

@@ -1,9 +1,12 @@
-
-.shipping{
-    display: flex;
-    justify-content: space-evenly;
-    font-family:Roboto;
-    font-size: 16px;
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-    
+.shipping {
+  border: 0;
+  background: transparent;
+}
+.wrapperr {
+  display: flex;
+}

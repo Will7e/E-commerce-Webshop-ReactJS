@@ -1,22 +1,36 @@
-import React, { useEffect, useReducer } from "react";
+import React, { useEffect, useState } from "react";
 import "./checkout.css";
 import "./Button.css";
 import Basketlogo from "../logopack/basket-logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
-import reducer, { initialState } from "./reducer";
 import CheckoutProduct from "./CheckoutProduct";
 import CurrencyFormat from "react-currency-format";
 import { useStateValue } from "./StateProvider";
 
 const Checkout = () => {
   const [{ basket }, dispatch] = useStateValue();
+  const [shipping, setShipping] = useState("");
+  const [total, setTotal] = useState();
 
   useEffect(() => {
-    localStorage.setItem("todos", JSON.stringify([...basket]));
+    localStorage.setItem("my-product-list", JSON.stringify([...basket]));
   }, [basket]);
 
   const subtotal = basket.reduce((total, item) => item.price + total, 0);
+
+  useEffect(() => {
+    if (subtotal < 500 && subtotal > 1) {
+      setShipping("49 kr");
+      setTotal(subtotal + 49);
+    } else if (subtotal > 500) {
+      setShipping("Gratis");
+      setTotal(subtotal + 0);
+    } else {
+      setShipping("Gratis");
+      setTotal(subtotal + 0);
+    }
+  }, [subtotal]);
 
   return (
     <div className="checkout">
@@ -56,13 +70,13 @@ const Checkout = () => {
                   <span className="subtotal-price">{value} kr</span>
                 </p>
                 <p className="subtotal shipping-price">
-                  Frakt <span className="subtotal-price">Grattis</span>
+                  Frakt <span className="subtotal-price">{shipping}</span>
                 </p>
               </div>
 
               <div className="total-price">
                 <p>
-                  Totalpris: <span className="price-number">{value} kr</span>
+                  Totalpris: <span className="price-number">{total} kr</span>
                 </p>
 
                 <button className="buy-button button">
@@ -72,7 +86,7 @@ const Checkout = () => {
                 <div className="bottom__summary">
                   <p className="summary__bottom">
                     <FontAwesomeIcon className="check__icon" icon={faCheck} />{" "}
-                    <span>Fri frakt</span>
+                    <span>Fri frakt över 500kr</span>
                   </p>
                   <p>
                     <FontAwesomeIcon className="check__icon" icon={faCheck} />{" "}

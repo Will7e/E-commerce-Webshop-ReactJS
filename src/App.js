@@ -5,6 +5,11 @@ import Homepage from "./components/Homepage";
 import ProductsList from "./components/ProductsList";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Checkout from "./components/Checkout";
+import About from ".components/About"
+import CustomerService from ".components/CostumersService"
+import HowTo from ".components/HowTo"
+import Club from ".components/Club"
+
 
 function App() {
   return (
@@ -14,6 +19,11 @@ function App() {
       </div>
       <div className="App">
         <Routes>
+          <Route exact path="/" element={<Homepage />} />
+            <Route exact path="/about" element={<About />} />
+            <Route exact path="/customer" element={<CustomerService />} />
+            <Route exact path="/howto" element={<HowTo />} />
+            <Route exact path="/club" element={<Club />} />
           <Route path="/" element={<Homepage />} />
 
           <Route

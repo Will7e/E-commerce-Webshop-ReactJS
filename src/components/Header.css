@@ -137,3 +137,54 @@
 .drop__link :active {
   background-color: lightgray;
 }
+@media (max-width: 375px) {
+  .header {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    background-color: #2c2c2c;
+    position: top;
+    z-index: 1;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .headerlogo {
+    width: 40px;
+  }
+
+  .headersearch {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 24px;
+    max-width: 100px;
+  }
+
+  .categorybar {
+    align-content: center;
+    cursor: pointer;
+    margin: 1px 1px 1px 1px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  .bar-icon {
+    max-width: 20px;
+    margin-left: 20px;
+  }
+
+  .headersearch {
+    max-width: 375px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 24px;
+  }
+
+  .header__nav {
+    max-width: 100%;
+    max-height: 80px;
+    margin-top: 4px;
+    justify-content: space-evenly;
+  }
+}

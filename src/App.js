@@ -1,28 +1,48 @@
-import React from "react";
 import "./App.css";
-import Intro from "./components/Intro.js";
-import { useState } from "react";
-import Products from "./components/Products";
-import { propTypes } from "react-bootstrap/esm/Image";
-import Button from "./components/Button.js";
-import SizeButton from "./components/SizeButton.js";
-import Header from "./components/Header.js";
-import Shipping from './components/Shipping.js';
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Homepage from "./components/Homepage";
+import ProductsList from "./components/ProductsList";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Checkout from "./components/Checkout";
 
 function App() {
-  
   return (
-    <div className="App">
+    <BrowserRouter>
       <div>
-        <Header></Header>
-        <Intro />
-        <Shipping></Shipping>
-    <Products catId={1}></Products>
-    <Products catId={2}></Products>
-    <Products catId={3}></Products>
-    </ div>
-    </div>
+        <Header />
+      </div>
+
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+
+          <Route
+            path="/halsband"
+            exact
+            element={<ProductsList catName="Halsband" catId={2} />}
+          />
+
+          <Route
+            path="/koppel"
+            exact
+            element={<ProductsList catName="Koppel" catId={1} />}
+          />
+
+          <Route
+            path="/namnbrickor"
+            exact
+            element={<ProductsList catName="Namnbrickor" catId={3} />}
+          />
+          <Route path="/varukorg" exact element={<Checkout />} />
+        </Routes>
+      </div>
+
+      <div>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
-};
+}
 
 export default App;

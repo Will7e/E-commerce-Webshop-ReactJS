@@ -1,6 +1,22 @@
+* ::backdrop,
+*::after {
+  box-sizing: border-box;
+}
+
+.home {
+  width: 100%;
+  height: 100%;
+}
+.category-name {
+  font-size: 30px;
+  margin: 0 0 0 3rem;
+}
 .home__container {
   display: flex;
-  justify-content: center;
-  margin-top: 30px;
-  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 2rem 5rem 0 5rem;
+}
+.home__title {
+  margin-top: 3rem;
 }

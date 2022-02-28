@@ -20,9 +20,29 @@
 
 .images {
   margin: 15px;
-  width: 350px;
+  width: 300px;
 }
 .main-image {
-  width: 750px;
-  height: 500px;
+  width: 600px;
+  height: 450px;
+}
+
+@media (max-width: 375px) {
+  .image__container {
+    max-width: 375px;
+    margin-top: 2px;
+  }
+
+  .box-col {
+    max-width: 187.5px;
+  }
+
+  .images {
+    max-width: 185.5px;
+    margin: 1px;
+  }
+  .main-image {
+    max-width: 373px;
+    max-height: 250px;
+  }
 }

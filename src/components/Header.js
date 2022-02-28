@@ -8,16 +8,23 @@ import {
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
 import { faMessage } from "@fortawesome/free-regular-svg-icons";
-
 import DropdownMenu from "./DropdownMenu";
+import { Link } from "react-router-dom";
+import { useStateValue } from "./StateProvider";
 
 function Header() {
+  const [{ basket }] = useStateValue();
+
   return (
     <div className="header">
-      <img className="header__logo" src={logo} />
+      <Link className="links link__header" to="/">
+        <img className="header__logo" src={logo} />
+      </Link>
 
       <div className="logo__name">
-        <h1>BETONGGRIS</h1>
+        <Link className="links link__header" to="/">
+          <h1>BETONGGRIS</h1>
+        </Link>
       </div>
 
       <div className="category__bar">
@@ -45,20 +52,20 @@ function Header() {
             </span>
           </span>
         </div>
-
-        <div className="header__option items__basket">
-          <span className="header__optionLine basket__line">
-            Varukorg{" "}
-            <span>
-              <FontAwesomeIcon
-                className="basket__icon"
-                icon={faBasketShopping}
-              />
-              <span className="number_basketItem">0</span>
+        <Link className="links link__header" to="/varukorg">
+          <div className="header__option items__basket">
+            <span className="header__optionLine basket__line">
+              Varukorg{" "}
+              <span>
+                <FontAwesomeIcon
+                  className="basket__icon"
+                  icon={faBasketShopping}
+                />
+                <span className="number_basketItem">{basket?.length}</span>
+              </span>
             </span>
-          </span>
-        </div>
-
+          </div>
+        </Link>
         <div className="header__option option__hoverGray">
           <span className="header__optionLine ">
             Logga in{" "}

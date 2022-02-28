@@ -54,14 +54,13 @@ function Footer() {
         </div>
       </div>
       <div className="payment__box">
-        <img className="img" src={Klarna}></img>
-        <img className="img" src={Trygg}></img>
+        <img className="img klarna" src={Klarna}></img>
+        <img className="img trygg" src={Trygg}></img>
         <img className="img img-png" src={Media}></img>
       </div>
       <div className="copy-right">
         <p className="cr-text">
-          Betonggris.se - Djuraffär online och i din närmaste stad! - Copyright
-          © 2022 React Group
+          Betonggris.se - Djuraffär online! - Copyright © 2022 React Group
         </p>
       </div>
     </div>

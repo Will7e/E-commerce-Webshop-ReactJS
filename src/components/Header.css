@@ -1,14 +1,15 @@
 .header {
-  height: 100px;
+  height: 80px;
   display: flex;
   align-items: center;
   background-color: #2c2c2c;
   position: top;
   z-index: 100;
   width: 100%;
+  flex-wrap: wrap;
 }
 .header__logo {
-  width: 90px;
+  width: 70px;
   object-fit: contain;
   margin: 0 10px 0 40px;
 }
@@ -16,7 +17,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 14px;
   margin: 5px;
   padding-top: 12px;
@@ -33,7 +34,7 @@
   border-radius: 24px;
 }
 .header__searchInput {
-  height: 50px;
+  height: 40px;
   width: 100%;
   border: none;
   padding: 10px;
@@ -44,11 +45,10 @@
 }
 .header__searchIcon {
   padding: 10px;
-  height: 27px;
+  height: 20px;
   background-color: #2c2c2c;
   outline: 1px solid white;
   outline-offset: -1px;
-  margin-left: 2px;
   cursor: pointer;
   color: white;
 }
@@ -60,7 +60,7 @@
   color: white;
   justify-content: center;
   border-radius: 5px;
-  padding: 15px;
+  padding: 10px;
   background-color: black !important;
   cursor: pointer;
 }
@@ -115,5 +115,78 @@
   border: none;
 }
 .header__optionLine {
-  font-size: 20px;
+  font-size: 15px;
+}
+.links {
+  text-decoration: none;
+  color: white;
+  color: inherit;
+}
+.links :focus,
+:hover,
+:visited,
+:link,
+:active {
+  text-decoration: none;
+}
+.link__header:hover {
+  color: white !important;
+}
+.drop__link {
+  color: inherit;
+}
+.drop__link :active {
+  background-color: lightgray;
+}
+
+@media (max-width: 375px) {
+  .header {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    background-color: #2c2c2c;
+    position: top;
+    z-index: 1;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .header__logo {
+    width: 40px;
+  }
+
+  .header__search {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 24px;
+    max-width: 100px;
+  }
+
+  .category__bar {
+    align-content: center;
+    cursor: pointer;
+    margin: 1px 1px 1px 1px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  .bar-icon {
+    max-width: 20px;
+    margin-left: 20px;
+  }
+
+  .header__search {
+    max-width: 375px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 24px;
+  }
+
+  .header__nav {
+    max-width: 100%;
+    max-height: 80px;
+    margin-top: 4px;
+    justify-content: space-evenly;
+  }
 }

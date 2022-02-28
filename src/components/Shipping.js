@@ -1,27 +1,23 @@
 import React from "react";
-import rectangle1 from "../images/Rectangle (1).svg";
-import rectangle2 from "../images/Rectangle (2).svg";
-import rectangle3 from "../images/Rectangle (3).svg";
-import rectangle from "../images/Rectangle.svg";
 import "./Shipping.css";
 
 function Shipping() {
   return (
     <div className="shipping">
       <div>
-        <img className="truck__logo" src={rectangle} />
+        <img className="truck__logo" src="../images/Rectangle.svg" />
         <span> Snabb leverans</span>
       </div>
       <div>
-        <img className="box__logo" src={rectangle1} />
+        <img className="box__logo" src="../images/Rectangle (1).svg" />
         <span> Fri frakt över 500 kr</span>
       </div>
       <div>
-        <img className="pin__logo" src={rectangle2} />
+        <img className="pin__logo" src="../images/Rectangle (2).svg" />
         <span> Klubben för bästa vänner</span>
       </div>
       <div>
-        <img className="chat__logo" src={rectangle3} />
+        <img className="chat__logo" src="../images/Rectangle (3).svg" />
         <span> Professionell service</span>
       </div>
     </div>

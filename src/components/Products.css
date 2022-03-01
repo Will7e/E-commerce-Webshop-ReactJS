@@ -12,3 +12,10 @@
 .category-nr {
   padding-top: 30px;
 }
+
+@media (max-width: 428px) {
+  .prods {
+    border-bottom: 1px;
+    padding: 1rem;
+  }
+}

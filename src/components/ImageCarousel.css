@@ -2,3 +2,13 @@
   width: 450px;
   position: relative;
 }
+@media (max-width: 428px) {
+  .carousel {
+    width: 400px;
+  }
+}
+@media (max-width: 400px) {
+  .carousel {
+    width: 350px;
+  }
+}

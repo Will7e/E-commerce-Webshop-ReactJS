@@ -69,3 +69,34 @@
 .trygg {
   width: 6%;
 }
+
+@media (max-width: 428px) {
+  .footer__container {
+    margin: 0 1rem 0 1rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  .img-png {
+    width: 130px;
+    height: auto;
+    object-fit: contain;
+  }
+  .klarna {
+    width: 30%;
+  }
+  .trygg {
+    width: 10%;
+  }
+  .copy-right {
+    height: 6vh;
+    text-align: center;
+    font-weight: 600;
+    background-color: #ff6a00a6;
+  }
+  .cr-text {
+    padding-top: 1rem;
+    color: black;
+    opacity: 100% !important;
+    font-size: x-small;
+  }
+}

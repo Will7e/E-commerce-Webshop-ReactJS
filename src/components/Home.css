@@ -6,6 +6,9 @@
 .home {
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .category-name {
   font-size: 30px;
@@ -15,23 +18,22 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 0 5rem 0 5rem;
+  margin: 5rem 5rem 0 5rem;
 }
 .home__title {
   margin-top: 3rem;
 }
-@media (max-width: 428px) {
-  .category-name {
-    font-size: 20px;
-    margin-left: 1rem;
-  }
+
+@media (max-width: 375px) {
   .home__container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 0;
+    margin: 0rem 0rem 0 0rem;
   }
-  .home__title {
-    margin-top: 2rem;
+
+  .category-name {
+    font-size: 22px;
+    margin: 0 0 0 1rem;
   }
 }

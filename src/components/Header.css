@@ -1,12 +1,12 @@
 .header {
   height: 80px;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   background-color: #2c2c2c;
   position: top;
   z-index: 100;
   width: 100%;
+  flex-wrap: wrap;
 }
 .header__logo {
   width: 70px;
@@ -138,20 +138,24 @@
 .drop__link :active {
   background-color: lightgray;
 }
-@media (max-width: 428px) {
+
+@media (max-width: 375px) {
   .header {
-    height: 210px;
+    height: 200px;
     display: flex;
     align-items: center;
     background-color: #2c2c2c;
     position: top;
     z-index: 1;
     width: 100%;
+    flex-wrap: wrap;
   }
-  .headerlogo {
+
+  .header__logo {
     width: 40px;
   }
-  .headersearch {
+
+  .header__search {
     display: flex;
     flex: 1;
     align-items: center;
@@ -159,7 +163,7 @@
     max-width: 100px;
   }
 
-  .categorybar {
+  .category__bar {
     align-content: center;
     cursor: pointer;
     margin: 1px 1px 1px 1px;
@@ -171,7 +175,7 @@
     margin-left: 20px;
   }
 
-  .headersearch {
+  .header__search {
     max-width: 375px;
     display: flex;
     flex: 1;
@@ -183,24 +187,6 @@
     max-width: 100%;
     max-height: 80px;
     margin-top: 4px;
-    margin-bottom: 4px;
     justify-content: space-evenly;
-  }
-  .header__option {
-    padding: 7px;
-  }
-}
-@media (max-width: 405px) {
-  .header__option {
-    padding: 6px !important;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-}
-@media (max-width: 395px) {
-  .header__option {
-    padding: 2px !important;
-    margin-left: 5px;
-    margin-right: 5px;
   }
 }

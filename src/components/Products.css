@@ -9,15 +9,13 @@
   border-bottom: 1px solid lightgray;
 }
 
-@media (max-width: 375px) {
+.category-nr {
+  padding-top: 30px;
+}
+
+@media (max-width: 428px) {
   .prods {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     border-bottom: 1px;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-    object-fit: contain;
-    border-bottom: 1px solid lightgray;
+    padding: 1rem;
   }
 }

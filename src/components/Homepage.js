@@ -8,6 +8,7 @@ const Homepage = () => {
   return (
     <div className="home">
       <Intro />
+      <Shipping />
 
       <div className="home__container">
         <div className="home__title">

@@ -31,7 +31,6 @@
   position: relative;
   margin-bottom: 4rem;
 }
-
 @media (max-width: 375px) {
   .list__container {
     max-width: 375px;

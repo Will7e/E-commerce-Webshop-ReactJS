@@ -1,8 +1,8 @@
 export const initialState = {
   basket:
-    localStorage.getItem("todos") == null
+    localStorage.getItem("my-product-list") == null
       ? []
-      : JSON.parse(localStorage.getItem("todos")),
+      : JSON.parse(localStorage.getItem("my-product-list")),
 };
 
 const reducer = (state, action) => {

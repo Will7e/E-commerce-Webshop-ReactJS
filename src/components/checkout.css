@@ -137,6 +137,7 @@
   }
   .subtotal {
     padding: 1rem;
+    margin-bottom: 0;
   }
   .total-price {
     text-align: center;

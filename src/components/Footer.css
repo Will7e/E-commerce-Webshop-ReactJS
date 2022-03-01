@@ -50,7 +50,7 @@
 }
 .copy-right {
   width: 100%;
-  height: 5vh;
+  height: 8vh;
   text-align: center;
   font-weight: 600;
   background-color: #ff6a00a6;
@@ -187,6 +187,9 @@
   .info__head {
     margin-bottom: 0;
     font-size: medium;
+  }
+  .copy-right {
+    height: 8vh;
   }
 }
 @media (max-width: 376px) {

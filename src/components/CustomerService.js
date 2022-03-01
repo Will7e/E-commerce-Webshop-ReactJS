@@ -9,8 +9,10 @@ const CustomerService = () => {
     <div className="home">
       <div className="home__container">
             <Textbox heading="Kontakta Oss" 
-            text="Bortsett från hundar finns det ingenting vi tycker bättre om än att höra från våra kunder. 
-            Längst ner till höger hittar du alla våra kontaktuppgifter." />
+            text="
+            Kundtjanst@betonggris.se
+            Telefon: xxx - xxx xx xx
+            Öppetider: Vardagar 10.00 - 16.00" />
 
             <Textbox heading="Frågor och svar" 
             text="Vi behandlar alla frågor från kunder helt konfidentiellt." />

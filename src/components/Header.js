@@ -44,16 +44,17 @@ function Header() {
       </div>
 
       <div className="header__nav">
-        <div className="header__option option__hoverGray">
-          <Link className="links link_header" to="/customer">
-          <span className="header__optionLine ">
-            Kundservice{" "}
-            <span>
-              <FontAwesomeIcon className="cservice__icon" icon={faMessage} />
+        <Link className="links link_header" to="/customer">
+          <div className="header__option option__hoverGray">
+            <span className="header__optionLine ">
+              Kundservice{" "}
+              <span>
+                <FontAwesomeIcon className="cservice__icon" icon={faMessage} />
+              </span>
             </span>
-          </span>
-          </Link>
-        </div>
+          </div>
+        </Link>
+
         <Link className="links link__header" to="/varukorg">
           <div className="header__option items__basket">
             <span className="header__optionLine basket__line">
@@ -68,6 +69,7 @@ function Header() {
             </span>
           </div>
         </Link>
+
         <div className="header__option option__hoverGray">
           <span className="header__optionLine ">
             Logga in{" "}

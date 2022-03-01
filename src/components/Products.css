@@ -1,7 +1,7 @@
 .prods {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   border-bottom: 1px;
   padding-top: 3rem;
   padding-bottom: 6rem;
@@ -17,5 +17,6 @@
   .prods {
     border-bottom: 1px;
     padding: 1rem;
+    flex-wrap: wrap;
   }
 }

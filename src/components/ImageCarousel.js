@@ -20,7 +20,7 @@ const ImageCarousel = () => {
           <img className="d-block w-100" src={image2} alt="Second slide" />
 
           <Carousel.Caption>
-            <h3>Preium quality</h3>
+            <h3>Premium quality</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </Carousel.Caption>
         </Carousel.Item>

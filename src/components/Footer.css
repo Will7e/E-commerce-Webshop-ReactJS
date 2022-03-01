@@ -106,6 +106,9 @@
 }
 @media (max-width: 376px) {
   .footer__container {
-    margin: 0;
+    padding: 3rem;
+  }
+  .copy-right {
+    height: 8vh;
   }
 }

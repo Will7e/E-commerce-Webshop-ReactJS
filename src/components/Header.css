@@ -90,6 +90,9 @@
 .basket__line {
   margin-bottom: 3px;
 }
+.option__hoverGray:first-child {
+  padding: 14px;
+}
 
 .option__hoverGray:hover {
   background-color: white !important;
@@ -117,6 +120,9 @@
 .header__optionLine {
   font-size: 15px;
 }
+.header__optionLine :hover {
+  color: white !important;
+}
 .links {
   text-decoration: none;
   color: white;
@@ -129,9 +135,7 @@
 :active {
   text-decoration: none;
 }
-.link__header:hover {
-  color: white !important;
-}
+
 .drop__link {
   color: inherit;
 }
@@ -189,12 +193,15 @@
   .header__option {
     padding: 7px;
   }
-}
-@media (max-width: 405px) {
-  .header__option {
-    padding: 7px;
-    margin-left: 10px;
-    margin-right: 10px;
+  @media (max-width: 405px) {
+    .header__option {
+      padding: 7px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+  .option__hoverGray:first-child {
+    padding: 11px;
   }
 }
 @media (max-width: 390px) {
@@ -209,5 +216,8 @@
     padding: 10px;
     margin-left: 5px;
     margin-right: 5px;
+  }
+  .option__hoverGray:first-child {
+    padding: 13.6px;
   }
 }

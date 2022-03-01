@@ -22,11 +22,45 @@
   padding-top: 70px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
   .category-nr {
     padding-left: 30px;
     padding-top: 20px;
     font-size: medium;
+  }
+  .heading {
+    padding-left: 0;
+    padding-top: 40px;
+  }
+
+  .prods {
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 391px) {
+  .category-nr {
+    padding-left: 30px;
+    padding-top: 20px;
+    font-size: medium;
+  }
+  .heading {
+    padding-left: 0;
+    padding-top: 40px;
+  }
+
+  .prods {
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 429px) {
+  .category-nr {
+    padding-left: 30px;
+    padding-top: 20px;
+    font-size: medium;
+  }
+  .heading {
+    padding-left: 0;
+    padding-top: 40px;
   }
 
   .prods {

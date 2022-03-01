@@ -28,9 +28,15 @@
     margin: 6px 3px 3px 3px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 391px) {
   .images {
-    width: 200px;
+    width: 180px;
+    margin: 5px 3px 3px 3px;
+  }
+}
+@media (max-width: 376px) {
+  .images {
+    width: 170px !important;
     margin: 5px 3px 3px 3px;
   }
 }

@@ -30,6 +30,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     margin: 0;
+    padding: 0;
   }
   .home__title {
     margin-top: 2rem;

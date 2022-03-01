@@ -192,14 +192,21 @@
 }
 @media (max-width: 405px) {
   .header__option {
-    padding: 6px !important;
+    padding: 7px;
     margin-left: 10px;
     margin-right: 10px;
   }
 }
-@media (max-width: 395px) {
+@media (max-width: 390px) {
   .header__option {
-    padding: 2px !important;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+@media (max-width: 376px) {
+  .header__option {
+    padding: 10px;
     margin-left: 5px;
     margin-right: 5px;
   }

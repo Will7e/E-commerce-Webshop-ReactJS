@@ -20,13 +20,11 @@ function Header() {
       <Link className="links link__header" to="/">
         <img className="header__logo" src={logo} />
       </Link>
-
-      <div className="logo__name">
-        <Link className="links link__header" to="/">
+      <Link className="links link__header" to="/">
+        <div className="logo__name">
           <h1>BETONGGRIS</h1>
-        </Link>
-      </div>
-
+        </div>
+      </Link>
       <div className="category__bar">
         <DropdownMenu />
       </div>

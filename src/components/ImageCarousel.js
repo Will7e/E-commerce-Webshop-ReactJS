@@ -13,7 +13,7 @@ const ImageCarousel = () => {
           <img className="d-block w-100" src={image1} alt="First slide" />
           <Carousel.Caption>
             <h3>Premium products</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <p>Våra produkter är våra, du hittar dem inte någon annanstans.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -21,16 +21,16 @@ const ImageCarousel = () => {
 
           <Carousel.Caption>
             <h3>Premium quality</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Våra produkter är av högsta kvalitet och tål all sorts bus och lek.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img className="d-block w-100" src={image3} alt="Third slide" />
 
           <Carousel.Caption>
-            <h3>Perfectly fit</h3>
+            <h3>Perfect fit</h3>
             <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              Som hundägare själva vet vi hur viktigt perfekt passform är för hundens komfort.
             </p>
           </Carousel.Caption>
         </Carousel.Item>

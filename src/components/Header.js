@@ -45,12 +45,14 @@ function Header() {
 
       <div className="header__nav">
         <div className="header__option option__hoverGray">
+          <Link className="links link_header" to="/customer">
           <span className="header__optionLine ">
             Kundservice{" "}
             <span>
               <FontAwesomeIcon className="cservice__icon" icon={faMessage} />
             </span>
           </span>
+          </Link>
         </div>
         <Link className="links link__header" to="/varukorg">
           <div className="header__option items__basket">

@@ -6,10 +6,10 @@ import Homepage from "./components/Homepage";
 import ProductsList from "./components/ProductsList";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Checkout from "./components/Checkout";
-import About from ".components/About"
-import CustomerService from ".components/CostumersService"
-import HowTo from ".components/HowTo"
-import Club from ".components/Club"
+import About from "./components/About"
+import CustomerService from "./components/CustomerService"
+import HowTo from "./components/HowTo"
+import Club from "./components/Club"
 
 
 function App() {
